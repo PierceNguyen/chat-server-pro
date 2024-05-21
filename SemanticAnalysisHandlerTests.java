@@ -61,7 +61,8 @@ public class SemanticAnalysisHandlerTests {
     h.handleRequest(input1);
     h.handleRequest(input2);
     h.handleRequest(input3);
-    assertEquals(expected, h.handleRequest(input4));
+    String a = h.handleRequest(input4);
+    assertEquals(expected, a);
   }
 
   @Test
